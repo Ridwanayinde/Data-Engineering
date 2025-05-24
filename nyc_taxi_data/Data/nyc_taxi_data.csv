@@ -1,0 +1,4 @@
+pickup_datetime,dropoff_datetime,pickup_location,dropoff_location,passenger_count,fare_amount
+2025-05-01 08:00:00,2025-05-01 08:15:00,Location A,Location D,1,12.5
+2025-05-01 08:10:00,2025-05-01 08:25:00,Location B,Location E,2,18.0
+2025-05-01 08:30:00,2025-05-01 08:50:00,Location C,Location F,1,22.5

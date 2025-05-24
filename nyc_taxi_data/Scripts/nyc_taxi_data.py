@@ -10,12 +10,19 @@ Created on Sat May 24 12:01:28 2025
 # 🐼 Pandas = data table toolbox | head() = preview rows | info() = structure
 # non-null = good value | Python starts counting from 0
 
-
+import os
 import pandas as pd
 
 # Load CSV file
+# Get the current directory where the script is loacted 
+script_dir = os.path.dirname (os.path.abspath(__file__))
 
-df =  pd.read_csv ("/home/ridwan-ayinde/Desktop/MIT Emerging Talent/Data Engineering/Data/nyc_taxi_sample.csv")
+# Join with the relative path to the CSV file
+
+csv_path = os.path.join(script_dir, "..", "Data", "nyc_taxi_data.csv")
+
+df = pd.read_csv(csv_path)
+
 
 #print (df.head())
 
